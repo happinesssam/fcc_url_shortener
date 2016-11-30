@@ -1,0 +1,19 @@
+html  
+  head
+    link(href='/css/style.css', rel='stylesheet')
+    title Your shortened Url
+  body
+    h1 Your shortened Url
+    ul
+        li
+            span(class="label") Original url: 
+            - url = oUrl
+            a(href=oUrl) #{oUrl}
+        li
+            span(class="label") LinkId: 
+            span= linkId
+        li
+            span(class="label") Link URL: 
+            - url = linkUrl
+            a(href=url) #{linkUrl}
+            

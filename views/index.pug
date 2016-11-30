@@ -1,0 +1,14 @@
+html  
+  head
+    link(href='/css/style.css', rel='stylesheet')
+    script(src='/js/index.js', type='text/javascript')
+    title Url shortener
+  body
+    h1 Budget Url shortener
+    div Please append a valid url to #{url} and hit enter.
+    div Or enter it in the box below and hit submit
+    div
+        label(for='url') Url:
+        input(type='text', placeholder='' id='url')
+        button(type='button' onclick='shortenUrl()') Submit
+            
